@@ -19,7 +19,7 @@
 ## 🚀 如何一键调用
 
 ### 方案 A：在 Trae / Cursor 中作为工作区导入
-1. 复制本仓库链接：`https://github.com/你的用户名/Legal-Exam-Skills-AI.git`
+1. 复制本仓库链接：`https://github.com/Lillianx0221/Legal-Exam-Skills-AI`
 2. 在 Trae / Cursor 中克隆并打开该文件夹。
 3. 在对话框中直接输入你的案情或复习需求（例如：*“我要复习知产的侵权比对客观题”*），Agent 会自动读取 `instruction.md` 触发对应的备考 Skill。
 
