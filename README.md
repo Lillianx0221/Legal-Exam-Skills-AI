@@ -63,6 +63,19 @@
 
 ## 🎬 实战演示
 针对国际法（即将迎来考试OvO）在TRAE上使用效果如下：
+<div align="center">
+  <img src="./assets/skill-trae1.gif" width="800">
+  <br><br>
+  <img src="./assets/skill-trae2.gif" width="800">
+  <br><br>
+  <img src="./assets/skill-trae3.gif" width="800">
+  <br><br>
+  <img src="./assets/skill-trae4.gif" width="800">
+  <br><br>
+  <img src="./assets/skill-trae5.gif" width="800">
+  <br><br>
+  <img src="./assets/skill-trae6.gif" width="800">
+</div>
 
 ---
 
