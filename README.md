@@ -1,38 +1,87 @@
-# 🏛️ Legal-Exam-Skills-AI
+# 🏛️ Legal-Exam-Skills-AI (智能备考-法学Agent)
 
 <div align="center">
-  <img src="https://img.shields.io/badge/License-MIT-E8F5E9?style=flat-square&logo=opensourceinitiative&logoColor=black" alt="License">
-  <img src="https://img.shields.io/badge/Domain-Chinese_Law-E8F5E9?style=flat-square" alt="Domain">
-  <img src="https://img.shields.io/badge/Status-Active-E8F5E9?style=flat-square" alt="Status">
+  <img src="https://img.shields.io/badge/AI%20IDE-Trae%20%7C%20Cursor%20Ready-blueviolet?style=for-the-badge&logo=openai" alt="IDE Ready">
+  <img src="https://img.shields.io/badge/Domain-Chinese%20Law-0052D4?style=for-the-badge" alt="Domain">
+  <img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge" alt="License">
 </div>
 
-> **非 AI 替代，而是 AI 辅助。** 
-> 本项目是一个专为中国大陆法考（客观题/主观题）及法学考研设计的结构化 AI 提示词（Prompt）与 Agent 编排技能库。
+<br/>
 
-## 🎯 设计哲学
+> **将法考与考研的逻辑推演，封装为可一键调用的 AI Skill。**
+> 本项目专为 Trae / Cursor 等先进 AI IDE 打造，以部门法为主轴，细分客观题与主观题策略，构建严密的法律智能体路由矩阵。
 
-不同于简单的“替人写文书”指令，本技能库将法律推理的认知过程划分为三层架构：
-- **输入 (Input)**：复杂长文本与案情的事实剥离、因果映射。
-- **处理 (Process)**：基于成文法的逻辑推演、陷阱生成与管辖权决策。
-- **输出 (Output)**：法理学宏观叙事搭建、合宪性审查图谱与法言法语纠偏。
+## ⚡ 核心特性 (Features)
+- 🧠 **内置路由思维**：导入后，Agent 自动根据“部门法 -> 客观/主观题型”匹配底层推演模型。
+- ⚖️ **严格教义学框架**：从刑法的两阶层到民商法的请求权基础，杜绝 AI 幻觉，强迫模型输出法言法语。
+- 🎯 **动态题库生成**：支持针对机械记忆难点动态生成包含陷阱的客观选择题与主观连环追问。
 
-## 🗂️ 技能导航 (Skills Directory)
+## 🚀 如何一键调用 (Quick Start)
 
-| 模块 | 部门法 | 技能名称 | 适用场景 |
+### 方案 A：在 Trae / Cursor 中作为工作区导入（推荐）
+1. 复制本仓库链接：`https://github.com/你的用户名/Legal-Exam-Skills-AI.git`
+2. 在 Trae / Cursor 中克隆并打开该文件夹。
+3. 在对话框中直接输入你的案情或复习需求（例如：*“我要复习知产的侵权比对客观题”*），Agent 会自动读取 `instruction.md` 触发对应的备考 Skill。
+
+### 方案 B：在线 Agent 平台一键导入
+使用 Coze 或 Dify 时，新建 Agent，在配置页面选择**通过 GitHub 导入**，填入本仓库地址，系统将自动抓取 `instruction.md` 作为大脑进行分发。
+
+---
+
+## 🗂️ 技能矩阵 (Skill Matrix)
+
+| 部门法 | 题型类别 | 技能文件 | 核心能力 / 解决痛点 |
 | :--- | :--- | :--- | :--- |
-| **01 提取** | 刑法 | [犯罪构成事实拆解与映射引擎](./01-Knowledge-Extraction/crime-constitution-deconstructor.md) | 多人多次交织犯罪定罪逻辑剥离 |
-| **01 提取** | 行政法 | [受案范围边界拆解](./01-Knowledge-Extraction/act-and-scope-deconstructor.md) | 具体/抽象行政行为定性 |
-| **01 提取** | 民商法 | [请求权基础与连环嵌套解析器](./01-Knowledge-Extraction/claim-basis-relationship-mapper.md) | 复杂合同、担保、物权交叉案情图谱化 |
-| **02 测验** | 知识产权法 | [侵权比对与权利限制测验机](./02-Exam-Simulation/ip-infringement-trap-generator.md) | 合理使用、先用权等免责条款陷阱测验 |
-| **02 测验** | 刑事诉讼法 | [证据链与期限陷阱题生成器](./02-Exam-Simulation/evidence-and-timeline-generator.md) | 羁押期限重算、非法证据排除盲点 |
-| **02 测验** | 国际私法 | [涉外管辖权与准据法指引决策树](./02-Exam-Simulation/transnational-jurisdiction-solver.md) | 冲突规范与最密切联系原则推演 |
-| **03 批改** | 民事诉讼法 | [普通程序精准校验器](./03-Evaluation-and-Feedback/ordinary-program-validator.md) | 概念对齐与程序违规纠偏 |
-| **03 批改** | 法理学 | [深度论述架构师](./03-Evaluation-and-Feedback/essay-architect.md) | 主观大题模板注入与法言法语包装 |
-| **03 批改** | 宪法 | [合宪性审查推演图谱](./03-Evaluation-and-Feedback/constitutional-review-analyzer.md) | 机构职权越权审查与比例原则应用 |
+| **01 民商法** | 主观题 | [案例-请求权基础解析](./01-民商法/02-主观题/案例-请求权基础与连环嵌套图谱解析.md) | 应对复杂合同、物权、担保交叉的连环嵌套案情 |
+| **02 知识产权法** | 客观题 | [多选-侵权比对与权利限制](./02-知识产权法/01-客观题/多选-侵权比对与权利限制测验机.md) | 测试合理使用、法定许可、先用权等免责条款边界 |
+| **03 民事诉讼法** | 客观题 | [单选-普通程序法定概念校验](./03-民事诉讼法/01-客观题/单选-普通程序法定概念精准校验.md) | 概念对齐与程序违规纠偏（如审限、举证节点陷阱） |
+| **04 刑事诉讼法** | 客观题 | [多选-证据链与期限陷阱题](./04-刑事诉讼法/01-客观题/多选-证据链与期限陷阱题生成器.md) | 动态生成包含期限重算、非法证据排除盲点的测验 |
+| **05 刑法** | 主观题 | [案例-犯罪构成事实拆解](./05-刑法/02-主观题/案例-犯罪构成事实拆解与映射引擎.md) | 多主体多次交织犯罪的因果映射与定罪逻辑剥离 |
+| **06 行政法** | 主观题 | [案例-受案范围与适格被告](./06-行政法与行政诉讼法/02-主观题/案例-受案范围与适格被告拆解.md) | 剥离复杂案情，精准界定具体/抽象行政行为 |
+| **07 法理与宪法** | 主观题 | [论述-法理学深度架构师](./07-法理学与宪法/02-主观题/论述-法理学深度论述架构师.md) | 为宏观论述题注入标准模板与法治“金句”包装 |
+| **08 国际法** | 客观题 | [组合题-涉外管辖权决策树](./08-国际法/01-客观题/组合题-涉外管辖权与准据法指引决策树.md) | 一步步推演最密切联系原则与冲突规范 |
 
-## 🚀 如何使用
+---
 
-1. 点击上方表格中的技能链接，进入对应的 `.md` 文件。
-2. 复制 `# Role` 至文末的所有文本。
-3. 粘贴到你常用的 AI 交互界面（如 Gemini 1.5 Pro, Claude 3.5, NotebookLM）。
-4. 替换文本中 `[{{填写...}}]` 的变量即可开始运行。
+## 📂 项目目录树 (Directory Tree)
+
+本项目严格按照法学生的复习路径构建目录，分为“部门法 -> 题型类别 -> 备考技能”三级架构。
+
+```text
+Legal-Exam-Skills-AI/
+├── instruction.md                      # 🌟 Agent 全局大脑与核心路由 (主入口)
+├── README.md                           # 项目主页与说明书
+├── 01-民商法/
+│   ├── 01-客观题/
+│   │   ├── 多选-混合担保与物权陷阱测验.md
+│   │   └── 单选-意思表示与合同效力辨析.md
+│   └── 02-主观题/
+│       ├── 简答-民法典核心制度对比.md
+│       └── 案例-请求权基础与连环嵌套图谱解析.md
+├── 02-知识产权法/
+│   ├── 01-客观题/
+│   │   └── 多选-侵权比对与权利限制测验机.md
+│   └── 02-主观题/
+│       └── 案例-前沿知产交叉侵权分析.md
+├── 03-民事诉讼法/
+│   ├── 01-客观题/
+│   │   └── 单选-普通程序法定概念精准校验.md
+│   └── 02-主观题/
+│       └── 案例-管辖权异议与程序救济推演.md
+├── 04-刑事诉讼法/
+│   └── 01-客观题/
+│       └── 多选-证据链与期限陷阱题生成器.md
+├── 05-刑法/
+│   └── 02-主观题/
+│       └── 案例-犯罪构成事实拆解与映射引擎.md
+├── 06-行政法与行政诉讼法/
+│   └── 02-主观题/
+│       └── 案例-受案范围与适格被告拆解.md
+├── 07-法理学与宪法/
+│   ├── 01-客观题/
+│   │   └── 单选-国家机构职权越权审查测验.md
+│   └── 02-主观题/
+│       └── 论述-法理学深度论述架构师.md
+└── 08-国际法/
+    └── 01-客观题/
+        └── 组合题-涉外管辖权与准据法指引决策树.md
